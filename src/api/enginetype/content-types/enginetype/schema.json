@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enginetypes",
+  "info": {
+    "singularName": "enginetype",
+    "pluralName": "enginetypes",
+    "displayName": "Enginetype"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "machines": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::machine.machine",
+      "inversedBy": "enginetypes"
+    }
+  }
+}

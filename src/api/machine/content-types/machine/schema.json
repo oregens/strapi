@@ -21,6 +21,18 @@
       "relation": "manyToMany",
       "target": "api::toc.toc",
       "mappedBy": "machines"
+    },
+    "enginetypes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::enginetype.enginetype",
+      "mappedBy": "machines"
+    },
+    "years": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::year.year",
+      "mappedBy": "machines"
     }
   }
 }
